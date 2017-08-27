@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <script>console.time('start')</script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://afiqrostam.github.io/isia-library/drunken-parrot.css'>
+    <link rel='stylesheet' href='https://afiqrostam.github.io/isia-library/isia-style.css'>
+  </head>
+  <body>
+    <div class="modal" id="LoadModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-loader" role="document"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i></div>
+    </div>
+    <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog" role="document"><div class="modal-content row"></div></div>
+    </div>
+    <section id="container" class="sidebar-close">
+      <header class="header black-bg">
+        <div class="sidebar-toggle-box">
+          <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+        </div>
+        <a class="logo" href="#about" aria-controls="about" data-toggle="tab">
+          <img src="https://sites.google.com/site/556tggwqd/icon-128x128.png" style="height: 32px">&nbsp;<b>I See I Act</b>
+        </a>
+        <div class="top-menu"></div>
+      </header>
+      
+      <aside>
+        <div id="sidebar" class="nav-collapse " tabindex="5000" style="overflow: hidden; outline: none;">
+          <ul class="sidebar-menu" id="nav-accordion">
+            <h5 class="centered">&nbsp;</h5>
+            <h5 class="centered userName"></h5>
+            <li class="mt"><a href="#about" aria-controls="about" role="tab" data-toggle="tab"><i class="fa fa-question-circle"></i>About</a></li>
+            <li><a href="#activeprofile" aria-controls="activeprofile" role="tab" data-toggle="tab"><i class="fa fa-user"></i>Profile</a></li>
+            <li><a href="#submissionlist" aria-controls="submissionlist" role="tab" data-toggle="tab"><i class="fa fa-desktop"></i>My Submissions</a></li>
+            <li class="sub-menu">
+              <a href="javascript:;"><i class="fa fa-tasks"></i>Admin</a>
+              <ul class="sub">
+                <li><a href="#validationlist" aria-controls="validationlist" role="tab" data-toggle="tab"><i class="fa fa-check-square-o"></i>Validations</a></li>
+                <li><a href="#reportlist" aria-controls="reportlist" role="tab" data-toggle="tab"><i class="fa fa-file-text"></i>Report Builder</a></li>
+                <li><a href="#employeelist" aria-controls="employeelist" role="tab" data-toggle="tab"><i class="fa fa-users"></i>Employees</a></li>
+                <li><a href="#projectlist" aria-controls="projectlist" role="tab" data-toggle="tab"><i class="fa fa-industry"></i>Projects</a></li>
+                <li><a href="#adminlist" aria-controls="adminlist" role="tab" data-toggle="tab"><i class="fa fa-user-circle-o"></i>Admins</a></li>
+                <li><a href="#countrylist" aria-controls="countrylist" role="tab" data-toggle="tab"><i class="fa fa-globe"></i>Country</a></li>
+              </ul>
+            </li>
+            <li><a href="#statistics" aria-controls="statistics" role="tab" data-toggle="tab"><i class="fa fa-bar-chart"></i>Statistics</a></li>
+            <li><a href="https://sites.google.com/a/veolia.com/hse-asia-industrial/" target="_blank"><i class="fa fa-university"></i>HSE Intranet</a></li>
+          </ul>
+        </div>
+      </aside>
+      
+      <section id="main-content">
+		<section class="wrapper site-min-height">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in section" id="about">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> About</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in section" id="activeprofile">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> My Profile</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in section" id="employeelist">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> Employee List</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in section" id="projectlist">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> Project List</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in section" id="countrylist">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> Country List</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in section" id="adminlist">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> Administrator List</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in section" id="submissionlist">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> My Submissions</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>         
+            <div role="tabpanel" class="tab-pane fade in section" id="validationlist">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> Validation List</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in section" id="reportlist">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> Report Builder</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in section" id="statistics">
+              <h3 class="mt mb"><i class="fa fa-angle-right"></i> Statistics</h3>
+              <div class="row">
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                  <p data-lorem="3-7s"></p>
+                </div>
+                <div class="col-lg-1 hidden-xs hidden-sm hidden-md">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+		</section>
+      </section>
+      
+      <footer class="site-footer">
+        <div class="text-center">2012-2016 - ISIA build 3.0001
+          <a href="#" aria-controls="" data-toggle="tab" class="go-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+      </footer>
+    </section>
+    <script src='https://apis.google.com/js/api.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js'></script>
+    <script src='https://afiqrostam.github.io/isia-library/highcharts.js' defer></script>
+    <script src='https://afiqrostam.github.io/isia-library/xlsx.js' defer></script>
+    <script src='https://afiqrostam.github.io/isia-library/load-image.js' defer></script>
+    <script src='https://afiqrostam.github.io/isia-library/array-find-polyfill.js'></script>
+    <script src='https://afiqrostam.github.io/isia-library/nice-scroll.js'></script>
+    <script src='https://afiqrostam.github.io/isia-library/commons.js'></script>
+    <script src='https://afiqrostam.github.io/isia-library/lorem.js'></script>
+    <script>
+      $(document).ready(
+        function(){
+          console.timeEnd('start');
+          console.log('yay');
+          $('.go-top').click(function(){$(window).scrollTop(1)});
+          $('#sidebar').find('a').not('.dcjq-parent').on('click',function(){
+            now=new Date();
+            state={'timestamp':now.getTime()};
+            params={'page':$(this).attr('aria-controls')};
+            google.script.history.push(state, params,'');
+            if($(window).width()<769){$('.fa-bars').click()}});
+          google.script.history.setChangeHandler(function(e){
+            if(e.location.parameters.page!=null){
+              $('#sidebar').find('a[aria-controls="'+e.location.parameters.page+'"]').tab('show')}
+            else{$('#sidebar').find('a[aria-controls="about"]').tab('show')}});
+          rem();
+          });
+    </script>
+  </body>
+</html>
