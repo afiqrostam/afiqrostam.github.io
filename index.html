@@ -293,15 +293,7 @@
           console.log('yay');
           $('.go-top').click(function(){$(window).scrollTop(1)});
           $('#sidebar').find('a').not('.dcjq-parent').on('click',function(){
-            now=new Date();
-            state={'timestamp':now.getTime()};
-            params={'page':$(this).attr('aria-controls')};
-            google.script.history.push(state, params,'');
             if($(window).width()<769){$('.fa-bars').click()}});
-          google.script.history.setChangeHandler(function(e){
-            if(e.location.parameters.page!=null){
-              $('#sidebar').find('a[aria-controls="'+e.location.parameters.page+'"]').tab('show')}
-            else{$('#sidebar').find('a[aria-controls="about"]').tab('show')}});
           rem();
           });
     </script>
