@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body>
-    <iframe id="iframe" onload="resizeIframe(this)" src="https://script.google.com/a/macros/veolia.com/s/AKfycbxsXIYkkSn8_gLs2YI-mOjT6_40rQIdCTPzoeVPCdUa/dev" 
+    <iframe id="iframe" onchange="resizeIframe(this)" src="https://script.google.com/a/macros/veolia.com/s/AKfycbxsXIYkkSn8_gLs2YI-mOjT6_40rQIdCTPzoeVPCdUa/dev" 
             style="
                    border: none;
                    padding: 0px;
@@ -25,6 +25,7 @@
       if(query!=null){iframe.src=link+query}
       iframe.style.display='block';
     function resizeIframe(obj) {
+        console.log(obj);
         alert(obj.contentWindow.location.pathname);
     }
     </script>
