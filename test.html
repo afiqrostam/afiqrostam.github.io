@@ -2,9 +2,19 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script>
+      function check(){
+        try{
+        this.contentDocument;
+   }
+   catch(err){
+        alert(err);
+   }
+}
+    </script>
   </head>
   <body>
-    <iframe id="iframe" src="https://script.google.com/a/macros/veolia.com/s/AKfycbxuYbKXdWJeCJmhV4aWeFiain8tCVVQOuidayIk4ehNl5ySp2ob/exec" 
+    <iframe id="iframe" onload="check" src="https://script.google.com/a/macros/veolia.com/s/AKfycbxuYbKXdWJeCJmhV4aWeFiain8tCVVQOuidayIk4ehNl5ySp2ob/exec" 
             style="
                    border: none;
                    padding: 0px;
@@ -23,6 +33,8 @@
       var link=iframe.src;
       if(query!=null){iframe.src=link+query}
       iframe.style.display='block';
+      
+      
     </script>
   </body>
 </html>
