@@ -4,9 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script>
       var query=document.location.search;
-      if(query!=null){
-      var link = document.getElementById('iframe').src;
-      document.getElementById('iframe').src=link+query}
+      var iframe=document.getElementById('iframe');
+      var link=iframe.src;
+      if(query!=null){iframe.src=link+query}
+      iframestyle.display='block';
+      
     </script>
   </head>
   <body>
@@ -20,6 +22,7 @@
                    left: 0;
                    width: 100%;
                    height: 100%;
+                   display: none;
                    ">
     </iframe>
   </body>
