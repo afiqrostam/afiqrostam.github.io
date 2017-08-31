@@ -1,39 +1,52 @@
 {
-  "name": "HackerWeb",
-  "short_name": "HackerWeb",
+  "name": "Hazard Spotter",
+  "short_name": "ISIA",
   "start_url": ".",
-  "display": "standalone",
-  "background_color": "#fff",
-  "description": "A simply readable Hacker News app.",
+  "display": "fullscreen",
+  "background_color": "##f2f2f2",
+  "description": "Hazard Spotter: I See I Act",
   "icons": [{
-    "src": "images/touch/homescreen48.png",
+    "src": "icons/ISIA16.png",
+    "sizes": "16x16",
+    "type": "image/png"
+  }, {
+    "src": "icons/ISIA24.png",
+    "sizes": "24x24",
+    "type": "image/png"
+  }, {
+    "src": "icons/ISIA32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  }, {
+    "src": "icons/ISIA48.png",
     "sizes": "48x48",
     "type": "image/png"
   }, {
-    "src": "images/touch/homescreen72.png",
+    "src": "icons/ISIA64.png",
+    "sizes": "64x64",
+    "type": "image/png"
+  }, {
+    "src": "icons/ISIA72.png",
     "sizes": "72x72",
     "type": "image/png"
   }, {
-    "src": "images/touch/homescreen96.png",
+    "src": "icons/ISIA96.png",
     "sizes": "96x96",
     "type": "image/png"
   }, {
-    "src": "images/touch/homescreen144.png",
+    "src": "icons/ISIA128.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "icons/ISIA144.png",
     "sizes": "144x144",
     "type": "image/png"
   }, {
-    "src": "images/touch/homescreen168.png",
-    "sizes": "168x168",
-    "type": "image/png"
-  }, {
-    "src": "images/touch/homescreen192.png",
-    "sizes": "192x192",
+    "src": "icons/ISIA196.png",
+    "sizes": "196x196",
     "type": "image/png"
   }],
   "related_applications": [{
     "platform": "web"
-  }, {
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
   }]
 }
