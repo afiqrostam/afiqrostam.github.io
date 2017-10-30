@@ -28,9 +28,10 @@
         try{e.contentDocument}
         catch(err){console.log(err)}}
       var query=document.location.search;
+      var hash=document.location.hash;
       var iframe=document.getElementById('iframe');
       var link=iframe.src;
-      if(query!=null){iframe.src=link+query}
+      if(query!=null){iframe.src=link+query+hash}
       iframe.style.display='block';
     </script>
   </body>
